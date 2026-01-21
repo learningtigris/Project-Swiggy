@@ -67,7 +67,7 @@ pipeline{
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d --name swiggy -p 3000:3000 learningtigris/swiggy:latest'
+                sh 'docker run -d --name swiggy_app -p 6000:6000 learningtigris/swiggy:latest'
             }
         }
     }
